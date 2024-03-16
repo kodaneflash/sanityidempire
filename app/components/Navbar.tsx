@@ -47,7 +47,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="flex divide-x border-r sm:border-l">
+        <div className="flex items-center divide-x border-r sm:border-l">
           <Button
             variant={"outline"}
             onClick={() => handleCartClick()}

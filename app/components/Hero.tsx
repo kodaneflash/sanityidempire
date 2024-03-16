@@ -60,16 +60,16 @@ export default async function Hero() {
             Products
           </Link>
           <Link
-            href="/Women"
+            href="/About"
             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
           >
-            Women
+            About
           </Link>
           <Link
-            href="/Teens"
+            href="/Contact"
             className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
           >
-            Teens
+            Contact
           </Link>
         </div>
       </div>

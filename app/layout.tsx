@@ -6,8 +6,6 @@ import Navbar from "./components/Navbar";
 import ShoppingCartModal from "./components/ShoppingCartModal";
 // import Footer from "./components/Footer"; // Removed this line to prevent duplication
 import Head from 'next/head'; // Fix this line
-import Footer from "./components/Footer"; // Added this line to fix the "Footer is not defined" error
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -40,13 +38,31 @@ export default function RootLayout({
         <title>{String(metadata.title)}</title>
         <meta name="description" content={String(metadata.description)} />
         <link rel="icon" href="/favicon.ico" /> {/* Add your favicon link here */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-XXXX');`,
+          }}
+        />
       </Head>
       <body className={inter.className}>
+        {/* Directly include the GTM NoScript iframe here */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
         <CartProvider>
           <Navbar />
           <ShoppingCartModal />
           {children}
-          <Footer /> {/* Ensure this line is active to include the Footer on all pages */}
+          {/* Footer component is intentionally omitted based on previous instructions */}
         </CartProvider>
       </body>
     </html>

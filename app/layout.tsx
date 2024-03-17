@@ -5,6 +5,7 @@ import CartProvider from "./components/Providers";
 import Navbar from "./components/Navbar";
 import ShoppingCartModal from "./components/ShoppingCartModal";
 import Footer from "./components/Footer"; // Added this line
+import Head from 'next/head'; // Fix this line
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,10 +35,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <title>{String(metadata.title)}</title>
         <meta name="description" content={String(metadata.description)} />
-      </head>
+        <link rel="icon" href="/favicon.ico" /> {/* Add your favicon link here */}
+      </Head>
       <body className={inter.className}>
         <CartProvider>
           <Navbar />

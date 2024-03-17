@@ -4,6 +4,7 @@ import "./globals.css";
 import CartProvider from "./components/Providers";
 import Navbar from "./components/Navbar";
 import ShoppingCartModal from "./components/ShoppingCartModal";
+import Footer from "./components/Footer"; // Added this line
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,7 @@ export default function RootLayout({
           <Navbar />
           <ShoppingCartModal />
           {children}
+          <Footer /> {/* Added this line */}
         </CartProvider>
       </body>
     </html>

@@ -25,7 +25,8 @@ export default function Footer() {
             ID<span className="text-primary">Empire</span>
           </h1>
           <p className="text-gray-600">Your Trusted Vendor for Premium Fake ID&apos;s</p>
-          <p className="text-sm">© IDEmpire All Rights Reserved</p>
+          <p className="text-gray-600">For inquiries, email us at contact@idempire.us</p>
+          <p className="text-sm">© IDEmpire LLC All Rights Reserved</p>
         </div>
       </div>
     </footer>

@@ -7,16 +7,6 @@ export default function Footer() {
         <nav>
           <ul className="flex flex-wrap justify-center gap-4">
             <li>
-              <Link href="/About" className="text-gray-600 hover:text-gray-900">About</Link>
-            </li>
-            <li>
-              <Link href="/Contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-            </li>
-            <li>
-              <Link href="/Privacy" className="text-gray-600 hover:text-gray-900">Privacy Policy</Link>
-            </li>
-            <li>
-              <Link href="/Terms" className="text-gray-600 hover:text-gray-900">Terms & Conditions</Link>
             </li>
           </ul>
         </nav>
@@ -25,8 +15,8 @@ export default function Footer() {
             ID<span className="text-primary">Empire</span>
           </h1>
           <p className="text-gray-600">Your Trusted Vendor for Premium Fake ID&apos;s</p>
-          <p className="text-gray-600">For inquiries, email us at contact@idempire.us</p>
-          <p className="text-sm">© IDEmpire LLC All Rights Reserved</p>
+          <p className="text-gray-600">contact@idempire.us</p>
+          <p className="text-gray-500 text-sm">© IDEmpire LLC All Rights Reserved</p>
         </div>
       </div>
     </footer>

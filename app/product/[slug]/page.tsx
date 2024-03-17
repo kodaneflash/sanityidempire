@@ -53,10 +53,6 @@ export default async function ProductPge({
                 <span className="text-sm">4.2</span>
                 <Star className="h-5 w-5" />
               </Button>
-
-              <span className="text-sm text-gray-500 transition duration-100">
-                56 Ratings
-              </span>
             </div>
 
             <div className="mb-4">

@@ -24,7 +24,7 @@ export default function Footer() {
           <h1 className="text-2xl md:text-4xl font-bold">
             ID<span className="text-primary">Empire</span>
           </h1>
-          <p className="text-gray-600">Your Trusted Vendor for Premium Fake ID's</p>
+          <p className="text-gray-600">Your Trusted Vendor for Premium Fake ID&apos;s</p>
           <p className="text-sm">© IDEmpire All Rights Reserved</p>
         </div>
       </div>

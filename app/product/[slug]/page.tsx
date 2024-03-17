@@ -5,7 +5,6 @@ import { fullProduct } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
 import { Button } from "@/components/ui/button";
 import { Star, Truck } from "lucide-react";
-import Footer from "@/app/components/Footer"; // Added import for Footer
 
 async function getData(slug: string) {
   const query = `*[_type == "product" && slug.current == "${slug}"][0] {
@@ -107,7 +106,6 @@ export default async function ProductPge({
           </div>
         </div>
       </div>
-      <Footer /> {/* Added Footer component */}
     </div>
   );
 }

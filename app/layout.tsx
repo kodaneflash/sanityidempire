@@ -4,8 +4,9 @@ import "./globals.css";
 import CartProvider from "./components/Providers";
 import Navbar from "./components/Navbar";
 import ShoppingCartModal from "./components/ShoppingCartModal";
-import Footer from "./components/Footer"; // Added this line
+// import Footer from "./components/Footer"; // Removed this line to prevent duplication
 import Head from 'next/head'; // Fix this line
+import Footer from "./components/Footer"; // Added this line to fix the "Footer is not defined" error
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,7 +46,7 @@ export default function RootLayout({
           <Navbar />
           <ShoppingCartModal />
           {children}
-          <Footer /> {/* Added this line */}
+          <Footer /> {/* Ensure this line is active to include the Footer on all pages */}
         </CartProvider>
       </body>
     </html>

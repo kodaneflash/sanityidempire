@@ -46,15 +46,7 @@ export default async function ProductPge({
               <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
                 {data.name}
               </h2>
-            </div>
-
-            <div className="mb-6 flex items-center gap-3 md:mb-10">
-              <Button className="rounded-full gap-x-2">
-                <span className="text-sm">4.2</span>
-                <Star className="h-5 w-5" />
-              </Button>
-            </div>
-
+            </div>    
             <div className="mb-4">
               <div className="flex items-end gap-2">
                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
@@ -72,7 +64,7 @@ export default async function ProductPge({
 
             <div className="mb-6 flex items-center gap-2 text-gray-500">
               <Truck className="w-6 h-6" />
-              <span className="text-sm">2-4 Day Shipping</span>
+              <span className="text-sm">2-4 Day Expedited Shipping</span>
             </div>
 
             <div className="flex gap-2.5">

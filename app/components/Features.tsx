@@ -8,7 +8,7 @@ const Features = () => {
           {/* Feature One */}
           <div className="p-6 border border-gray-200 rounded-lg bg-gray-800 text-center">
             <h3 className="text-lg font-semibold text-white">Premium Templates</h3>
-            <p className="max-w-md leading-relaxed xl:text-lg mt-2 text-base text-gray-300">IDEmpire offers high-quality IDs that are fully scannable, providing fully customizable templates with your photo and information using the official photo saturation and text fonts. We bypass the latest security measures and include microprinting, holographic overlays, UV ink, black light features, security patterns, guilloché patterns, optical variable ink, embedded holograms, laser perforation, barcode and magnetic stripe encoding, intaglio printing, polycarbonate & Teslin IDs.</p>
+            <p className="max-w-md leading-relaxed xl:text-lg mt-2 text-base text-gray-300">IDEmpire offers high-quality IDs that are fully scannable, providing fully customizable templates with your photo and information using the official photo saturation and text fonts. We bypass the latest security measures and include microprinting, holographic overlays, UV ink, black light features, security patterns, guilloche patterns, optical variable ink, embedded holograms, laser perforation, barcode and magnetic stripe encoding, intaglio printing, polycarbonate & Teslin IDs.</p>
           </div>
           {/* Feature Two */}
           <div className="p-6 border border-gray-200 rounded-lg bg-gray-800 text-center">

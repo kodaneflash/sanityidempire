@@ -17,7 +17,7 @@ const Features = () => {
           </div>
           {/* Feature Three */}
           <div className="px-8 py-6 border border-gray-200 rounded-lg bg-white text-center sm:px-6">
-            <h3 className="text-lg font-bold text-indigo-800">How We Do It</h3>
+            <h3 className="text-lg font-bold text-indigo-800">Our Process</h3>
             <p className="max-w-md mx-auto leading-relaxed xl:text-lg mt-2 text-base text-gray-600">IDEmpire&apos;s method for producing fake IDs is both simple and effective, focusing on rapid production without compromising on quality. For the best results, wear darker clothing to provide contrast against the background and highlight your facial features.  Cleanliness and grooming are advised for clarity in the photo, which should be passport-sized for seamless integration into the ID. We handle the design, materials, and security features, and once everything is finalized, we create and print your fake ID.</p>
           </div>
         </div>

@@ -21,8 +21,8 @@ export default async function Hero() {
           </h1>
           <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
           Our flawless designs, DMV-grade printing materials, & advanced
-           security features make our IDs stand out from the rest.
-           Our ID&apos;s are fully tested BCS PDF417 for encoding & laminated with holograms.
+          security features make our IDs stand out from the rest.
+          Our ID&apos;s are fully tested BCS PDF417 for encoding & laminated with holograms.
           </p>
         </div>
 

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import CartProvider from "./components/Providers";
-import Navbar from "./components/Navbar";
-import ShoppingCartModal from "./components/ShoppingCartModal";
-import Footer from "./components/Footer"; // Removed this line to prevent duplication
-import Head from 'next/head'; // Fix this line
+import { ThemeProvider } from './components/theme-provider'; // Corrected import path
+import CartProvider from "./components/Providers"; // Ensure this path is correct
+import Navbar from "./components/Navbar"; // Corrected path
+import ShoppingCartModal from "./components/ShoppingCartModal"; // Ensure this path is correct
+import Footer from "./components/Footer"; // Ensure this path is correct
+import Head from 'next/head';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -33,38 +34,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <Head>
-        <title>{String(metadata.title)}</title>
-        <meta name="description" content={String(metadata.description)} />
-        <link rel="icon" href="/favicon.ico" /> {/* Add your favicon link here */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5JHQ9SJ9');`,
-          }}
-        />
-      </Head>
-      <body className={inter.className}>
-        {/* Directly include the GTM NoScript iframe here */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-5JHQ9SJ9"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          ></iframe>
-        </noscript>
-        <CartProvider>
-          <Navbar />
-          <ShoppingCartModal />
-          {children}
-        <Footer />
-        </CartProvider>
-      </body>
-    </html>
+    <ThemeProvider> {/* Wrap the entire content with ThemeProvider */}
+      <html lang="en">
+        <Head>
+          <title>{String(metadata.title)}</title>
+          <meta name="description" content={String(metadata.description)} />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <body className={inter.className}>
+          <CartProvider>
+            <Navbar />
+            <ShoppingCartModal />
+            {children}
+            <Footer />
+          </CartProvider>
+        </body>
+      </html>
+    </ThemeProvider> // Closing ThemeProvider tag
   );
 }
